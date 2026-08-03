@@ -11,6 +11,31 @@ separates "judge is awed" from "judge is suspicious."
 Categories: **MATH** = ISEF Mathematics; **SOFT/ROBO** = Systems Software / Robotics &
 Intelligent Machines.
 
+## What wins the CS categories (2023–2026 evidence)
+
+Research into the software/robotics winners confirms one consistent formula: **one
+identifiable novel technical core** (an algorithm, architecture, or control method — never
+glued-together APIs) + **quantitative evaluation against a state-of-the-art baseline**
+(runtime, accuracy, cost) + **a working end-to-end demonstration** + **a legible societal
+hook**, frequently with a dramatic cost-reduction claim (a $1,000 brain-controlled
+prosthetic leg won the $50,000 Moore Award in 2025; cheap computational hyperspectral
+imaging won ROBO in 2026). Three strategic facts follow:
+
+- **Systems Software rewards genuinely algorithmic work.** The clearest top result,
+  Michelle Wei's 2024 SOCP solver, paired a *provable* runtime claim (matrix-multiplication
+  time) with benchmarks beating existing solvers — theory-paper-grade, and it converted a
+  category win into a $50,000 overall award. Security/program-analysis tooling (concolic
+  execution, vulnerability finding — cf. T10) is the recurring runner-up theme.
+- **ROBO is ISEF's de facto AI category.** Pure applied-AI projects with no robot at all
+  won ROBO First Awards in 2024 (CNN-Transformer skin-cancer screening with fairness and
+  interpretability work) and 2026 (physics-aware self-supervised hyperspectral imaging).
+  T4 (interpretability) fits there naturally.
+- **Category choice is strategic.** The biggest overall prizes increasingly go to
+  computing-heavy projects entered *outside* the computing categories: an exoplanet-detection
+  pipeline (2023, $75k, Physics & Astronomy), the MCMC origami simulator (2026, $100k,
+  Physics). A computational-mathematics project (T1/T2) entered in MATH competes against a
+  smaller field while carrying the same computational firepower.
+
 ---
 
 ## Tier 1 — Recommended (highest expected value)
