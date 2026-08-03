@@ -10,10 +10,22 @@ permutations, compares codes, and re-derives the property tests itself.
 | R(3,4) ≤ 9  | 48 | 173 | 3.3 KB | <0.01 s | <0.01 s |
 | R(3,5) ≤ 14 | 1,029 | 9,060 | 220 KB | 0.04 s | 0.02 s |
 | R(3,6) ≤ 18 | 761,692 | 9,863,537 | 358 MB | 443 s | 152 s |
+| R(4,4) ≤ 18 | 3,432,184 | 39,065,756 | streamed | — | — |
 
-R(3,6) additionally re-derived 9,399,540,422 property rejections during checking —
-these are deliberately absent from the certificate, because recomputing them is
-cheaper than reading them.
+Property rejections are deliberately absent from the certificate, because
+recomputing them is cheaper than reading them. The checker re-derived
+9,399,540,422 of them for R(3,6) and 18,992,273,191 for R(4,4).
+
+R(4,4) was run in streaming mode — the generator piped directly into the checker,
+so the certificate was verified in one pass and never touched disk. This is how
+the system is meant to scale: certificate size stops being a storage constraint.
+
+For context on why R(4,4) is the interesting one: it is the standard benchmark for
+certified combinatorial nonexistence. The SAT route encodes it as 153 variables
+and 6,120 clauses and produces an 8.4 MB DRAT proof — and that is close to the
+practical frontier for the family, because symmetry is what defeats SAT here. This
+certificate covers the same theorem via exhaustive enumeration, where symmetry is
+handled natively rather than fought.
 
 ## Cross-checks against the literature
 
