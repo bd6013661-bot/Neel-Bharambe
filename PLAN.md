@@ -251,13 +251,28 @@ and produces verified certificates today.
 | Result | Certificate | Generate | Check | Check/generate |
 |---|---|---|---|---|
 | $R(3,3) \le 6$ | 220 B, 7 witnesses | 0.00 s | 0.00 s | 0.49× |
-| $R(3,4) \le 9$ | 3.3 KB, 173 witnesses | 0.00 s | 0.00 s | 0.38× |
-| $R(3,5) \le 14$ | 220 KB, 9,060 witnesses | 5.9 s | 1.4 s | **0.24×** |
+| $R(3,4) \le 9$ | 3.3 KB, 173 witnesses | 0.03 s | 0.01 s | 0.33× |
+| $R(3,5) \le 14$ | 220 KB, 9,060 witnesses | 5.9 s | 1.4 s | 0.25× |
 
-The falling check/generate ratio is the central empirical claim of §1 showing up
-in measurement: as instances grow, the canonicity search the checker *skips*
-grows faster than the bookkeeping it still performs. This is the headline graph
-for the poster, and it needs more points along the curve.
+**The scaling law, stated accurately.** While the search tree is still growing,
+the ratio falls — the canonicity search the checker skips grows faster than the
+bookkeeping it still performs:
+
+| family | growth phase | best |
+|---|---|---|
+| triangle-free | $n{=}6$: 0.144 → $n{=}9$: **0.023** (43× advantage) | 0.023 |
+| $R(4,4)$ | $n{=}6$: 0.283 → $n{=}9$: 0.203 | 0.203 |
+| $R(3,5)$ | $n{=}6$: 0.187 → $n{=}10$: 0.145 | 0.129 |
+
+It is **not monotone**, and the plan does not claim it is. Once the property
+becomes unsatisfiable the tree stops growing — $R(3,5)$ plateaus at 1,029 nodes
+from $n = 13$ — so the generator's work levels off while the checker still pays
+its per-node coverage sweep, and the ratio drifts back up. Separating the growth
+and saturation regimes is the correct analysis, and noticing that distinction is
+itself a result worth presenting: it says the advantage comes specifically from
+*search effort avoided*, which is exactly the mechanism the theory predicts.
+
+This curve is the headline graph for the poster, and it needs more points.
 
 **Correctness evidence:**
 

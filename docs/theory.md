@@ -329,11 +329,20 @@ cost of the generator. Hence:
 
 > Checking is asymptotically cheaper than generating.
 
-Measured on the Ramsey instances in `results/`, the ratio of check time to
-generate time falls as the instances grow — $0.49\times$ for $R(3,3)$,
-$0.38\times$ for $R(3,4)$, $0.24\times$ for $R(3,5)$ — which is the predicted
-behaviour, since the canonicity search the checker skips grows faster than the
-bookkeeping it still performs.
+Measured (`prototype/benchmark.py`), the ratio of check time to generate time
+falls while the search tree is still growing: from $0.144$ to $0.023$ for
+triangle-free graphs between $n = 6$ and $n = 9$, a 43-fold advantage, and
+similarly for $R(4,4)$ and $R(3,5)$. This is the predicted behaviour — the
+canonicity search the checker skips grows faster than the bookkeeping it still
+performs.
+
+The ratio is **not** monotone in $n$, and the theory says it should not be. Once
+the property becomes unsatisfiable the tree stops growing and further orders add
+only empty levels: for $R(3,5)$ the node count is constant at $1{,}029$ from
+$n = 13$ onward. The generator's work plateaus while the checker still performs
+its per-node coverage sweep over all $2^k$ candidate masks, so the ratio drifts
+back up. The advantage therefore tracks *search effort avoided* rather than $n$
+itself, which is precisely what §4.1 predicts.
 
 **Certificate size.** One record per emitted witness, each $O(k \log k)$ bytes.
 The transcript is written and consumed as a stream, so neither generator nor

@@ -91,14 +91,34 @@ Each certificate below is verified by **two independent checkers** — the C one
 | Result | Certificate | Witnesses | Generate | Check | Check/generate |
 |---|---|---|---|---|---|
 | $R(3,3) \le 6$ | 220 B | 7 | 0.00 s | 0.00 s | 0.49× |
-| $R(3,4) \le 9$ | 3.3 KB | 173 | 0.00 s | 0.00 s | 0.38× |
-| $R(3,5) \le 14$ | 220 KB | 9,060 | 5.9 s | 1.4 s | **0.24×** |
+| $R(3,4) \le 9$ | 3.3 KB | 173 | 0.03 s | 0.01 s | 0.33× |
+| $R(3,5) \le 14$ | 220 KB | 9,060 | 5.9 s | 1.4 s | 0.25× |
 
-*(times from the Python reference implementation, so the ratio is measured
-like-for-like; the C generator is roughly 100× faster.)*
+*(times from the Python reference implementation, so both halves are measured
+like-for-like; the C tools are ~100× faster on both sides and give the same
+ratio.)*
 
-The falling ratio is the point: the canonicity search that the checker skips grows
-faster than the bookkeeping it still does.
+### How the ratio actually behaves
+
+The honest version of the scaling claim, from `prototype/benchmark.py`:
+
+| family | growth phase | best ratio |
+|---|---|---|
+| triangle-free | $n{=}6$: 0.144 → $n{=}9$: **0.023** | 0.023 |
+| $R(4,4)$ | $n{=}6$: 0.283 → $n{=}9$: 0.203 | 0.203 |
+| $R(3,5)$ | $n{=}6$: 0.187 → $n{=}10$: 0.145 | 0.129 |
+
+While the search tree is still growing, each extra vertex costs the generator a
+canonicity search over exponentially more candidates and costs the checker only
+bookkeeping — so the ratio falls, reaching a **43× advantage** for triangle-free
+graphs at $n = 9$.
+
+It is **not monotone**, and pretending otherwise would misstate the result. Once
+the property becomes unsatisfiable the tree stops growing — for $R(3,5)$ the node
+count plateaus at 1,029 from $n = 13$ onward — so the generator's work levels off
+while the checker still pays its per-node coverage sweep, and the ratio drifts
+back up. That is saturation, not a failure of the mechanism, and the benchmark
+reports the two regimes separately rather than quoting endpoints.
 
 ## Correctness
 

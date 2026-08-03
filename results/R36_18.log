@@ -1,0 +1,4 @@
+problem: (K3, I6)-free graphs, target order 18
+counts by order: 1 2 3 7 14 37 100 356 1407 6657 30395 116792 275086 263520 64732 2576 7 0
+RESULT: no such graph on 18 vertices -> R(3,6) <= 18
+nodes=761692 witnesses=9863537 property-rejects=9399540422 time=442.97s
