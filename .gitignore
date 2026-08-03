@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+bin/
+*.proof
+*.g6
+.pytest_cache/

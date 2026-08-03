@@ -1,0 +1,32 @@
+orbitcert-proof 1
+problem ramsey s=3 t=3
+order 6
+root 0
+D 0
+X 1 1 0 2
+D 2
+X 3 0 2 1 3
+D 1
+empty 4
+U
+D 5
+D 3
+empty 5
+U
+U
+U
+D 3
+X 1 0 1 3 2
+X 2 0 1 3 2
+D 3
+empty 4
+U
+U
+U
+D 1
+X 0 0 2 1
+X 1 2 0 1
+X 2 0 2 1
+empty 2
+U
+qed 9 7
