@@ -183,10 +183,43 @@ analytic proof of "VCD ≤ 2 ⇒ TDmin ≤ 3". Pattern first, compute second.
 Extend the engine from graphs to concept classes (m×n 0/1 matrices, rows
 distinct) and certify the search.
 - Object: grow one **concept (row)** at a time. VCdim ≤ 2 is hereditary under
-  removing concepts (subclass-monotone) — that is the pruning property.
-  **Warning**: TDmin ≥ 4 is NOT hereditary (removing concepts shrinks teaching
-  sets), so it is a leaf test only. Do the monotonicity analysis in writing
-  before coding; it changes what the certificate must cover.
+  removing concepts (a set shattered by a subclass is shattered by the class) —
+  that is the pruning property, and the only one.
+
+- **TDmin is non-monotone in BOTH directions — corrected 2026-08-04.** An earlier
+  draft of this file justified "TDmin ≥ 4 is not hereditary" by saying *removing
+  concepts shrinks teaching sets*. That reason is **wrong**, and the wrong reason
+  misleads about which way the failure goes. Removing a concept does shrink each
+  surviving concept's *individual* teaching set, but TDmin is a **minimum over an
+  index set that also shrinks** — delete the concept achieving the minimum and
+  TDmin goes *up*.
+
+  Verified counterexample on 3 points: for
+  `C = {000, 100, 010, 110, 001}` the individual values are
+  TD(000)=3, TD(100)=TD(010)=TD(110)=2, TD(001)=1, so **TDmin(C) = 1**.
+  Delete `001` and every surviving concept has TD = 2, so **TDmin(C′) = 2** —
+  removal *raised* it. Exhaustively over all classes on 3 points, removing one
+  concept moves TDmin by at most ±1 and both signs occur.
+
+  Consequence for the search: TDmin ≥ 4 can hold at a node of **any** size, so it
+  is a per-node target test, never a pruning rule, and it may never prune at all.
+
+- **The conclusion changes shape, and so must the certificate.** For Ramsey the
+  claim was "level n is empty". Here it is "**no node anywhere passes the target
+  test**". That imposes a **per-node target obligation**: the certificate must
+  account for the target at every node — neither asserting it unverified nor
+  omitting it. A proof that silently skips the test at one node is exactly the
+  hole the checker exists to catch, and the Ramsey-era format has no slot for it.
+
+  Design note (mirrors the canonicity asymmetry, §1): "this node fails the target"
+  has a **short witness** — a concept together with a teaching set of size ≤ 3 for
+  it. Verifying that is O(m·n): check no other concept agrees on those points.
+  Confirming TDmin ≥ 4 instead requires sweeping all concepts against all small
+  subsets. So emit a (concept, teaching-set) witness per node for the common
+  failing case, exactly as rejections carry permutations. Both directions are
+  polynomial here — unlike canonicity — so the checker *could* recompute; the
+  witness is a cost optimisation that preserves "checking cheaper than
+  generating", not a soundness requirement. State which you chose and why.
 - Symmetry: minimum is column (point) permutations S_n plus row order. Decide and
   PROVE the invariance of VCdim and TDmin under whatever group you quotient by
   (S_n is safe; per-column label flips are probably safe — prove it before use).
