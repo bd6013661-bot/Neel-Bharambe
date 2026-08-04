@@ -14,6 +14,13 @@ at the exact node where the search went wrong. The checker never searches — it
 only applies permutations and compares codes — so **verification is cheaper than
 the original computation**, and gets relatively cheaper as instances grow.
 
+Related work, honestly stated: the MathCheck project (Bright, Ganesh et al.) has
+published certificates for SAT+CAS searches — including verified certificates for
+R(3,8)/R(3,9) at IJCAI 2025 — with a trusted base of a SAT solver plus a patched
+DRAT-trim. `orbitcert` certifies the enumeration itself, with no solver anywhere:
+the entire trusted base is the ~300-line checker in `csrc/occheck.c`. See
+`PLAN.md` §4 for the full positioning.
+
 ```
 $ ./bin/ocgen --ramsey 3 5 --order 14 --proof R35.proof
 problem: (K3, I5)-free graphs, target order 14

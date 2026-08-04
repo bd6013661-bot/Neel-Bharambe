@@ -34,13 +34,13 @@ scoring block on the ISEF rubric, and a student who cannot reconstruct their own
 central argument will be found out. §10 sets out the division of labour that
 keeps you honest and safe.
 
-**3. The prior-art survey behind this plan is partly unverified.** The research
-agents I ran hit an egress policy that blocked most direct page fetches, so a
-number of findings come from search summaries rather than full texts, and several
-cited arXiv identifiers could not be confirmed to exist. I verified the one that
-matters most — LeanSMS — by reading its source directly (§4). **Before you commit
-serious time, re-run the prior-art check from an unrestricted machine.** §5,
-Phase 0 makes this the first task, and it is not optional.
+**3. The prior-art picture changed after the first draft, against us.** The
+first survey named LeanSMS as the closest work. A later, network-enabled check
+found something closer: the MathCheck group published *verified certificates for
+R(3,8) and R(3,9)* at IJCAI 2025, and used nauty-coupled symmetry-breaking with
+certificates as far back as 2020. §4 states exactly what that kills and what
+survives. The lesson generalises: **re-verify prior art from an unrestricted
+machine before every major claim, and assume this field moves monthly.**
 
 ---
 
@@ -142,8 +142,37 @@ every permutation verifies.
 This is the section a judge will press hardest on, so it is the one that has to
 be airtight.
 
-**LeanSMS** (`github.com/leansolving/leansms`) is the closest work and the real
-competitor. I read its source. It compiles graph properties to CNF with
+**MathCheck (Bright, Ganesh et al.) is the closest work, and it is ahead of us
+on the headline numbers.** Verified, August 2026:
+
+- *"Verified Certificates via SAT and Computer Algebra Systems for the Ramsey
+  R(3,8) and R(3,9) Problems"* — Li, Duggan, Bright, Ganesh, **IJCAI 2025**
+  (ijcai.org/proceedings/2025/0292.pdf, arXiv:2502.06055). Certificates for
+  R(3,8) and R(3,9) — larger Ramsey instances than anything certified here.
+- *"Nonexistence Certificates for Ovals in a Projective Plane of Order Ten"*
+  (arXiv:2001.11974, 2020) — already couples a programmatic SAT solver **with
+  nauty** to learn symmetry-breaking clauses on the fly, certificate-logged.
+
+So the claim "enumeration emits no evidence" is false as stated, and this
+project's earlier framing overclaimed. What *survives*, stated precisely:
+
+1. **Architecture.** MathCheck certifies a SAT search: its trusted base is a SAT
+   solver + CAS coupling + a patched DRAT-trim. This project certifies the
+   *enumeration itself*: the trusted base is ~300 lines of C, no solver, no CAS,
+   no DRAT. Smallest-known trusted base for this class of result.
+2. **The measured check-vs-generate asymmetry** (43× in the growth regime),
+   which the MathCheck line does not measure.
+3. **The optimality argument** (rejection witnesses are the only short
+   certificates unless NP = coNP — a corollary of Babai–Luks 1983, presented as
+   such, not as new).
+
+That is a real niche — "cleaner, solver-free, minimal-TCB" — but it is a *method*
+niche, not a *results* niche. Which is why §5 now points the engine at a target
+whose answer is unknown (the RTD problem, see HANDOFF.md): re-certifying known
+values cannot carry the project alone.
+
+**LeanSMS** (`github.com/leansolving/leansms`) is the second-closest work. I
+read its source. It compiles graph properties to CNF with
 Lean-verified encodings, runs SAT-modulo-symmetries, and checks the LRAT proof in
 Lean 4 — genuinely impressive, with the strongest possible trust story. Its
 shipped verified theorems are:
