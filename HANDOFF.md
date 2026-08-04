@@ -5,7 +5,30 @@ needs to continue this project without any prior conversation context. It is the
 single source of truth for: what exists, what is verified, what was corrected,
 what to build next, and the constraints that must never be violated.
 
-Branch: `claude/isef-cs-project-h1wncp`. Everything described here is committed.
+## 0. Getting the code
+
+Everything described below is already committed and pushed. Clone it:
+
+```bash
+git clone https://github.com/bd6013661-bot/Neel-Bharambe.git
+cd Neel-Bharambe
+git checkout claude/isef-cs-project-h1wncp
+```
+
+Then set up and confirm the environment is healthy — this should take under a
+minute and must be green before any new work starts:
+
+```bash
+pip install python-sat pytest pytest-timeout      # numpy/sympy/networkx optional
+sudo apt-get install -y nauty                     # for the independent cross-checks
+make -C csrc                                      # builds bin/ocgen and bin/occheck
+python3 -m pytest -q                              # expect 194 passed
+./bin/ocgen --ramsey 3 5 --order 14 --quiet --proof /dev/stdout | ./bin/occheck
+# expect: VERIFIED: no (K3, I5)-free graph exists on 14 vertices, hence R(3,5) <= 14
+```
+
+If `nauty` is unavailable the cross-check tests skip rather than fail; install it
+anyway, because those tests are the strongest correctness evidence in the repo.
 
 ---
 
