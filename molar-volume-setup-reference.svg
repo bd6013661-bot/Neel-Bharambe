@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d62828"/>
+    </marker>
+    <marker id="dim" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="660" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111">Molar Volume of Hydrogen: Assembled Setup (after acid injected)</text>
+
+  <!-- bench -->
+  <line x1="20" y1="580" x2="940" y2="580" stroke="#555" stroke-width="3"/>
+
+  <!-- water bath -->
+  <rect x="62" y="360" width="596" height="216" fill="#cfe8fb"/>
+  <line x1="62" y1="360" x2="658" y2="360" stroke="#3a86c8" stroke-width="2"/>
+  <path d="M60,330 L60,578 L660,578 L660,330" fill="none" stroke="#333" stroke-width="4"/>
+  <text x="250" y="470" font-size="16" fill="#1d4f7a" font-weight="bold">Water bath (plastic bin)</text>
+
+  <!-- flask -->
+  <path d="M175,250 L175,300 L100,570 L270,570 L205,300 L205,250" fill="#f4f9fc" fill-opacity="0.85" stroke="#333" stroke-width="3"/>
+  <path d="M110,535 L270,535 L270,570 L100,570 Z" fill="#fff0a0" stroke="none"/>
+  <line x1="110" y1="535" x2="270" y2="535" stroke="#c9a800" stroke-width="1.5"/>
+  <path d="M100,570 L270,570" stroke="#333" stroke-width="3"/>
+  <rect x="160" y="556" width="55" height="6" fill="#8a8a8a" stroke="#555" transform="rotate(-6 187 559)"/>
+  <g fill="none" stroke="#666" stroke-width="1.3">
+    <circle cx="170" cy="545" r="3"/><circle cx="190" cy="540" r="2.5"/><circle cx="205" cy="546" r="3"/>
+    <circle cx="182" cy="500" r="3"/><circle cx="196" cy="460" r="2.5"/><circle cx="186" cy="420" r="3"/><circle cx="192" cy="360" r="2.5"/>
+  </g>
+
+  <!-- stopper -->
+  <polygon points="168,232 212,232 207,264 173,264" fill="#8b5a3c" stroke="#4a2e1c" stroke-width="2"/>
+
+  <!-- stopcock + syringe (left port) -->
+  <rect x="177" y="206" width="12" height="27" fill="#aaa" stroke="#555"/>
+  <rect x="165" y="215" width="36" height="6" fill="#d62828" stroke="#7a1010"/>
+  <rect x="174" y="104" width="18" height="102" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <rect x="176" y="194" width="14" height="10" fill="#444"/>
+  <line x1="183" y1="194" x2="183" y2="90" stroke="#444" stroke-width="4"/>
+  <rect x="168" y="84" width="30" height="7" fill="#444"/>
+  <g stroke="#999" stroke-width="1">
+    <line x1="174" y1="124" x2="182" y2="124"/><line x1="174" y1="144" x2="182" y2="144"/>
+    <line x1="174" y1="164" x2="182" y2="164"/><line x1="174" y1="184" x2="182" y2="184"/>
+  </g>
+
+  <!-- tubing (right port to cylinder) -->
+  <path d="M200,232 L200,200 Q200,170 230,170 L400,170 Q430,170 430,200 L430,555 Q430,568 445,568 L495,568 Q510,568 510,555 L510,512"
+        fill="none" stroke="#555" stroke-width="9" stroke-linecap="round"/>
+  <path d="M200,232 L200,200 Q200,170 230,170 L400,170 Q430,170 430,200 L430,555 Q430,568 445,568 L495,568 Q510,568 510,555 L510,512"
+        fill="none" stroke="#e9e9e9" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- gas flow arrows -->
+  <line x1="280" y1="156" x2="350" y2="156" stroke="#d62828" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="446" y1="250" x2="446" y2="320" stroke="#d62828" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="200" y1="330" x2="200" y2="285" stroke="#d62828" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- inverted graduated cylinder -->
+  <rect x="482" y="89" width="56" height="231" fill="#fff4c2"/>
+  <g fill="#e0a800">
+    <circle cx="495" cy="120" r="1.8"/><circle cx="520" cy="140" r="1.8"/><circle cx="505" cy="175" r="1.8"/>
+    <circle cx="528" cy="205" r="1.8"/><circle cx="492" cy="235" r="1.8"/><circle cx="515" cy="265" r="1.8"/>
+    <circle cx="500" cy="295" r="1.8"/><circle cx="530" cy="100" r="1.8"/>
+  </g>
+  <rect x="482" y="320" width="56" height="225" fill="#cfe8fb"/>
+  <line x1="482" y1="320" x2="538" y2="320" stroke="#3a86c8" stroke-width="2"/>
+  <rect x="464" y="75" width="92" height="14" fill="#dcdcdc" stroke="#333" stroke-width="2"/>
+  <path d="M480,89 L480,545 M540,89 L540,545" stroke="#333" stroke-width="3"/>
+  <g stroke="#555" stroke-width="1.2">
+    <line x1="482" y1="110" x2="494" y2="110"/><line x1="482" y1="150" x2="494" y2="150"/>
+    <line x1="482" y1="190" x2="494" y2="190"/><line x1="482" y1="230" x2="494" y2="230"/>
+    <line x1="482" y1="270" x2="494" y2="270"/><line x1="482" y1="310" x2="494" y2="310"/>
+    <line x1="482" y1="350" x2="494" y2="350"/><line x1="482" y1="390" x2="494" y2="390"/>
+    <line x1="482" y1="430" x2="494" y2="430"/><line x1="482" y1="470" x2="494" y2="470"/>
+  </g>
+  <g fill="none" stroke="#666" stroke-width="1.3">
+    <circle cx="510" cy="498" r="3"/><circle cx="514" cy="462" r="3.5"/><circle cx="507" cy="425" r="3"/>
+    <circle cx="512" cy="385" r="3.5"/><circle cx="508" cy="345" r="3"/>
+  </g>
+
+  <line x1="527" y1="470" x2="527" y2="410" stroke="#d62828" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- delta h -->
+  <line x1="540" y1="320" x2="600" y2="320" stroke="#222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="540" y1="360" x2="600" y2="360" stroke="#222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="588" y1="323" x2="588" y2="357" stroke="#222" stroke-width="2" marker-start="url(#dim)" marker-end="url(#dim)"/>
+  <text x="604" y="346" font-size="20" font-weight="bold" fill="#111">Δh</text>
+
+  <!-- retort stand + clamp -->
+  <rect x="790" y="566" width="140" height="14" fill="#555"/>
+  <rect x="848" y="60" width="9" height="508" fill="#777"/>
+  <rect x="540" y="196" width="310" height="8" fill="#777"/>
+  <rect x="841" y="189" width="24" height="22" fill="#444"/>
+  <rect x="474" y="188" width="72" height="24" rx="5" fill="none" stroke="#444" stroke-width="4"/>
+
+  <!-- labels -->
+  <g font-size="15" fill="#111">
+    <text x="18" y="96">Syringe</text>
+    <text x="18" y="114" font-size="13" fill="#444">(10.0 mL 3 M HCl,</text>
+    <text x="18" y="130" font-size="13" fill="#444">plunger pushed in)</text>
+    <line x1="140" y1="112" x2="172" y2="140" stroke="#444"/>
+
+    <text x="18" y="222">Stopcock (open)</text>
+    <line x1="130" y1="218" x2="164" y2="218" stroke="#444"/>
+
+    <text x="18" y="276">Two-hole rubber</text>
+    <text x="18" y="294">stopper</text>
+    <line x1="132" y1="274" x2="172" y2="252" stroke="#444"/>
+
+    <text x="290" y="398">125 mL</text>
+    <text x="290" y="416">Erlenmeyer flask</text>
+    <line x1="286" y1="404" x2="238" y2="404" stroke="#444"/>
+
+    <text x="290" y="530">Mg ribbon in HCl</text>
+    <text x="290" y="546" font-size="13" fill="#444">(H₂ bubbles form)</text>
+    <line x1="286" y1="533" x2="218" y2="556" stroke="#444"/>
+
+    <text x="245" y="140">Tubing (carries H₂)</text>
+
+    <text x="590" y="112">H₂ gas + water vapor</text>
+    <text x="590" y="130">collects at closed top</text>
+    <line x1="586" y1="118" x2="538" y2="140" stroke="#444"/>
+
+    <text x="625" y="186">Utility clamp</text>
+
+    <text x="680" y="430">Inverted 100 mL</text>
+    <text x="680" y="448">graduated cylinder</text>
+    <line x1="676" y1="436" x2="540" y2="436" stroke="#444"/>
+
+    <text x="680" y="530">Mouth under water,</text>
+    <text x="680" y="548">~1 in. off bin floor</text>
+    <line x1="676" y1="536" x2="542" y2="543" stroke="#444"/>
+
+    <text x="868" y="300">Retort</text>
+    <text x="868" y="318">stand</text>
+
+    <text x="548" y="378" font-size="13" fill="#444">bath surface</text>
+    <text x="604" y="310" font-size="13" fill="#444">level inside cylinder</text>
+  </g>
+
+  <text x="18" y="618" font-size="13" fill="#d62828">Red arrows = path of H₂ gas: flask → stopper → tubing → up into the cylinder.</text>
+  <text x="18" y="640" font-size="13" fill="#444">Reference only. The graded sketch must be drawn by hand, in ink, in your notebook.</text>
+</svg>
