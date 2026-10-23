@@ -1,0 +1,234 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>CHM2050 Exam 2 Cheat Sheet</title>
+<style>
+@page { size: letter; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: "Arial Narrow", "Liberation Sans Narrow", Arial, sans-serif; font-size: 7.6pt; line-height: 1.16; color:#000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; padding: 0.2in 0.2in; overflow: hidden; page-break-after: always; position: relative; }
+.cols { column-count: 3; column-gap: 0.11in; column-rule: 0.5px solid #999; height: 100%; column-fill: auto; }
+h1 { font-size: 9pt; margin: 0 0 2px; text-align:center; background:#222; color:#fff; padding:1px; column-span: all; }
+h2 { font-size: 8.2pt; margin: 3px 0 1px; padding: 1px 3px; background:#1f4e79; color:#fff; break-after: avoid; }
+h3 { font-size: 7.8pt; margin: 2px 0 0; color:#1f4e79; border-bottom: 0.5px solid #1f4e79; break-after: avoid; }
+p { margin: 1px 0; }
+ul, ol { margin: 0; padding-left: 10px; }
+li { margin: 0; }
+.hl { background: #fff200; }
+.key { background: #ffe0e0; border: 1px solid #d00; padding: 1px 2px; margin: 2px 0; break-inside: avoid; }
+.trap { color: #c00000; font-weight: bold; }
+.box { border: 1px solid #1f4e79; padding: 1px 2px; margin: 2px 0; break-inside: avoid; background:#eef4fb; }
+.f { font-family: inherit; }
+table { border-collapse: collapse; width: 100%; margin: 1px 0; break-inside: avoid; }
+td, th { border: 0.5px solid #777; padding: 0 1.5px; vertical-align: top; }
+th { background: #dde7f2; }
+b { font-weight: bold; }
+.small { font-size: 7.1pt; }
+.ex { background:#f2f2f2; border-left: 2px solid #555; padding: 0 2px; margin: 1px 0; break-inside: avoid; }
+</style></head><body>
+
+<!-- ======================= PAGE 1 ======================= -->
+<div class="page"><div class="cols">
+<h1>CHM2050 EXAM 2 — Ch 4.6–8.5 (Bonding · Composition · Stoichiometry · Gases) — FRONT</h1>
+
+<div class="key"><b>GLOBAL RULES (lose points otherwise):</b> <span class="hl">units on every answer + correct sig figs</span> · show work · T in <b>K</b> · balance eqn FIRST · <b>exam counts /200 but has 225 pts → do easy problems first</b>, skip &amp; return.</div>
+
+<h2>1. LEWIS STRUCTURES (4-step recipe)</h2>
+<ol>
+<li><b>Count valence e⁻</b>: sum group e⁻; <b>+1 per (−) charge, −1 per (+) charge</b>. (SO₄²⁻ = 6+24+2 = 32)</li>
+<li><b>Skeleton</b>: central = lowest EN / largest / most valences (C, N, B, S, P, Xe, Cl w/ O). <b>H &amp; F always peripheral</b>. Peripheral atoms bond only to central atoms.</li>
+<li>Fill outer atoms first → then central; make multiple bonds until octets (H = 2).</li>
+<li><b>Formal charge check</b>: <span class="f hl">FC = VE − NBE − ½BE</span> (= VE − lone-pair e⁻ − # bonds)</li>
+</ol>
+<p><b>Pick best structure</b>: (a) FCs minimized/zero (S=C=S not C=S=S) (b) no like-sign FC on neighbors (ONOO⁻) (c) (−) FC on the <i>more EN</i> atom (N₂O: N=N=O / N≡N–O) (d) least FC variation. Equivalent options → <b>resonance</b> (NO₃⁻, O₃, CO₃²⁻, benzene).</p>
+<p><span class="trap">2nd-row atoms (C,N,O,F) NEVER exceed 8 e⁻.</span> Period ≥3, groups 14–18 can be <b>hypervalent</b> (PCl₅, SF₆, XeF₄, SF₄). <b>Hypovalent</b>: B, Be, Al (BF₃ = 6 e⁻ on B, BeH₂ = 4). <b>Radicals</b>: odd e⁻ count (NO•, NO₂•, O₂⁻•).</p>
+<p><b>Bond order (Lewis)</b> = avg # bonds over resonance structures = total bond pairs ÷ # equivalent bonds: O₃ = 1.5, NO₃⁻ = 4/3, CO₃²⁻ = 4/3, NO₂⁻ = 1.5, SO₄²⁻ (octet) = 1. <span class="hl">Higher BO → shorter &amp; stronger bond</span>.</p>
+
+<h2>2. BOND TYPE &amp; DIPOLES</h2>
+<table><tr><th>ΔEN</th><th>bond</th></tr>
+<tr><td>≤ 0.4</td><td>(non-polar) covalent</td></tr>
+<tr><td>0.4 – 1.7</td><td>polar covalent</td></tr>
+<tr><td>&gt; 1.7 (metal + nonmetal)</td><td>ionic (e.g. YBr₃: 2.96−1.22 = 1.74 → ionic)</td></tr>
+<tr><td>metal–metal</td><td>metallic (pooled e⁻ "sea")</td></tr></table>
+<p class="f"><b>μ = δ·e·R</b> &nbsp; <b>%-ionic = δ×100% = μ/(eR)×100%</b> &nbsp; 1 D = 3.336×10⁻³⁰ C·m, e = 1.602×10⁻¹⁹ C, 1 Å = 10⁻¹⁰ m</p>
+<div class="ex">HCl: μ=1.109 D, R=1.284 Å → δ = (1.109×3.336e−30)/(1.602e−19×1.284e−10) = 0.180 → <b>18.0 % ionic</b></div>
+<p class="key"><b>DIPOLE ARROW (IUPAC, used in THIS class): draw from δ⁻ (negative) → δ⁺ (positive)</b>. Textbook uses old +→− convention; <span class="trap">use the class convention!</span> e.g. H–I: arrow points from I to H.</p>
+<p>Molecular dipole = <b>vector sum</b> of bond dipoles (CO₂ cancels → 0; H₂O bent → polar).</p>
+
+<h2>3. VSEPR (4.6) — steric # = atoms bonded + lone pairs on central</h2>
+<table class="small">
+<tr><th>SN</th><th>e⁻ geom / hybrid</th><th>AXₘEₙ → shape</th><th>angle</th></tr>
+<tr><td>2</td><td>linear · sp</td><td>AX₂ linear (CO₂, BeH₂, C₂H₂)</td><td>180°</td></tr>
+<tr><td rowspan=2>3</td><td rowspan=2>trig planar · sp²</td><td>AX₃ trig planar (BF₃, SO₃, NO₃⁻)</td><td>120°</td></tr>
+<tr><td>AX₂E bent (SO₂, O₃, NO₂⁻)</td><td>&lt;120°</td></tr>
+<tr><td rowspan=3>4</td><td rowspan=3>tetrahedral · sp³</td><td>AX₄ tetrahedral (CH₄, CF₄, SO₄²⁻)</td><td>109.5°</td></tr>
+<tr><td>AX₃E trig pyramidal (NH₃ 107°, DMSO)</td><td>&lt;109.5</td></tr>
+<tr><td>AX₂E₂ bent (H₂O 104.5°, OF₂)</td><td>&lt;&lt;109.5</td></tr>
+<tr><td rowspan=4>5</td><td rowspan=4>trig bipyramid · sp³d</td><td>AX₅ trig bipyramidal (PF₅, PCl₅)</td><td>90,120,180</td></tr>
+<tr><td>AX₄E <b>seesaw</b> (SF₄, TeCl₄)</td><td>&lt;90,&lt;120,&lt;180</td></tr>
+<tr><td>AX₃E₂ T-shaped (ClF₃)</td><td>&lt;90</td></tr>
+<tr><td>AX₂E₃ linear (XeF₂, I₃⁻)</td><td>180°</td></tr>
+<tr><td rowspan=3>6</td><td rowspan=3>octahedral · sp³d²</td><td>AX₆ octahedral (SF₆)</td><td>90°</td></tr>
+<tr><td>AX₅E square pyramidal (BrF₅)</td><td>&lt;90°</td></tr>
+<tr><td>AX₄E₂ square planar (XeF₄)</td><td>90°</td></tr></table>
+<p><b>Space needed: lone pair &gt; triple &gt; double &gt; single bond &gt; single-e⁻ domain.</b> LPs in trig-bipyramid go <span class="hl">EQUATORIAL</span> (only 2 neighbors at 90° vs 3 axial). In octahedral, 2 LPs go opposite (trans) → square planar.</p>
+<p>Distortions: SF₄ axial 173°, eq 106°. Double bond squeezes others (CH₂O: H–C–H &lt;120°). NO₂⁺ (180°) &gt; NO₂• (134°) &gt; NO₂⁻ (115°). <b>H₂S (92°) &lt; H₂O (104.5°) &lt; NH₃ (107°) &lt; CH₄ (109.5°)</b>. Bigger ligands → bigger angle (OCl₂ &gt; H₂O ≈ OF₂) — "ligand close packing".</p>
+<p><b>Electron-pair geometry</b> counts bonds + LPs; <b>molecular shape</b> names only atom positions.</p>
+<div class="key"><b>POLARITY RULE:</b> polar bonds + asymmetric shape = POLAR. <b>Nonpolar if all X identical AND shape is</b> AX₂, AX₃, AX₄, AX₅, AX₆, <b>AX₂E₃ (linear), AX₄E₂ (square planar)</b>. All other AXₘEₙ are polar (bent, pyramidal, seesaw, T, sq-pyramidal). Different X's → usually polar.<br>
+e.g. XeF₄ nonpolar · <b>SF₄ polar</b> · CF₄ nonpolar · PF₅ nonpolar · SeF₄ polar · BeF₂, SiF₄ nonpolar.</div>
+<p><b>Natta (line-dash-wedge) projection</b>: line = in plane, wedge = toward you, dash = behind. Draw tetrahedral as 2 lines + 1 wedge + 1 dash; draw LPs.</p>
+
+<h2>4. VALENCE BOND THEORY &amp; HYBRIDIZATION (5.1–5.3)</h2>
+<p>Bond = <b>overlap of 2 half-filled orbitals</b> (same phase/color), 1 e⁻ each → pair (Pauli). More overlap = stronger bond. Opposite phase → node → antibonding. Optimum bond length = overlap gain vs. nuclear repulsion.</p>
+<p><b>σ bond</b>: head-on, along bond axis, cylindrical (s–s, s–p, p–p end-on, hybrid–hybrid/–s). <b>π bond</b>: sideways p–p, density above/below axis, <span class="hl">weaker than σ</span>, nodal plane on axis.</p>
+<p class="hl"><b>Single = 1σ · Double = 1σ+1π · Triple = 1σ+2π</b> (π's are perpendicular: pₓ–pₓ and p_y–p_y)</p>
+<table class="small"><tr><th>SN</th><th>hybrid</th><th># HO</th><th>%s</th><th>leftover p (for π)</th><th>ex.</th></tr>
+<tr><td>2</td><td>sp</td><td>2</td><td>50</td><td>2 p</td><td>C₂H₂, BeCl₂, CO₂ C</td></tr>
+<tr><td>3</td><td>sp²</td><td>3</td><td>33</td><td>1 p</td><td>C₂H₄, BF₃, benzene</td></tr>
+<tr><td>4</td><td>sp³</td><td>4</td><td>25</td><td>0</td><td>CH₄, C₂H₆, H₂O O, NH₃</td></tr>
+<tr><td>5</td><td>sp³d (d<sub>z²</sub>)</td><td>5</td><td></td><td></td><td>PCl₅ (axial longer: 214 vs 202 pm)</td></tr>
+<tr><td>6</td><td>sp³d² (d<sub>z²</sub>, d<sub>x²−y²</sub>)</td><td>6</td><td></td><td></td><td>SF₆; TM: d²sp³</td></tr></table>
+<p><b>Steps</b>: promote (2s→2p) → hybridize (mix n AOs → n HOs, <i>orbital conservation</i>; HO energy = avg) → form bonds (energy gained &gt; promotion cost). <b>Lone pairs count toward SN</b> (O in H₂O = sp³).</p>
+<div class="box"><b>"Describe bonds in C₂H₂ using VB" template</b> (practice Q2): H–C≡C–H, linear, each C <b>sp</b>, 180°. Put molecule on <b>z-axis</b>. C–H: σ(C sp + H 1s). C–C: 1σ(sp+sp, head-on along z) + π(2pₓ+2pₓ) + π(2p_y+2p_y). Sketch: two sp lobes overlapping on z; pₓ lobes above/below (x), p_y lobes front/back. Total: 3σ + 2π.<br>
+<b>C₂H₄</b>: sp², 120°, C=C = σ(sp²–sp²) + π(2p_z–2p_z ⊥ plane); 5σ+1π. <b>C₂H₆</b>: sp³, 7σ. <b>Oxirane C₂H₄O</b> (3-ring C–C–O, 2 H per C, 2 LP on O): <b>all three atoms sp³</b> (strained ~60° ring).</div>
+
+<h2>5. MO THEORY (5.4) — LCAO</h2>
+<p>MOs spread over whole molecule. <b>n AOs → n MOs</b>. Bonding (constructive, +, e⁻ between nuclei, lower E); antibonding (*) (destructive, extra node, higher E). <span class="hl">Antibonding raised MORE than bonding lowered</span> → He₂, Be₂, Ne₂ don't exist. g = gerade (symmetric), u = ungerade.</p>
+<p class="f hl"><b>BO = ½ (bonding e⁻ − antibonding e⁻)</b></p>
+<p><b>Order — Li₂…N₂</b> (s–p mixing): σg2s &lt; σ*u2s &lt; <b>πu2p (×2) &lt; σg2p</b> &lt; π*g2p (×2) &lt; σ*u2p<br>
+<b>Order — O₂, F₂, Ne₂</b>: σg2s &lt; σ*u2s &lt; <b>σg2p &lt; πu2p (×2)</b> &lt; π*g2p (×2) &lt; σ*u2p</p>
+<p>Fill bottom-up, Hund's rule in degenerate π's. <b>Unpaired e⁻ → paramagnetic</b>; all paired → diamagnetic. Total spin S = ½ × (# unpaired).</p>
+<table class="small"><tr><th>valence e⁻</th><th>species</th><th>BO</th><th>mag</th></tr>
+<tr><td>2 / 4</td><td>Li₂ / Be₂</td><td>1 / 0</td><td>dia</td></tr>
+<tr><td>6</td><td>B₂</td><td>1</td><td><b>para</b></td></tr>
+<tr><td>8</td><td>C₂</td><td>2</td><td>dia</td></tr>
+<tr><td>10</td><td>N₂, CO, NO⁺, CN⁻, <b>C₂²⁻</b></td><td>3</td><td>dia</td></tr>
+<tr><td>11</td><td>N₂⁻•, NO•, O₂⁺•</td><td>2.5</td><td>para</td></tr>
+<tr><td>12</td><td>O₂ (NO⁻)</td><td>2</td><td><b>para (2 unpaired)</b></td></tr>
+<tr><td>13</td><td>O₂⁻• superoxide</td><td>1.5</td><td>para, S=½</td></tr>
+<tr><td>14</td><td>O₂²⁻ peroxide, F₂</td><td>1</td><td>dia</td></tr>
+<tr><td>16</td><td>Ne₂</td><td>0</td><td>–</td></tr></table>
+<div class="box"><b>Practice Q3 (O₂ family)</b>: O₂: (σg2s)²(σ*u2s)²(σg2p)²(πu2p)⁴(π*g2p)² BO 2 → <b>120.8 pm</b>; O₂⁺• (π*)¹ BO 2.5 → <b>111.6</b>; O₂⁻• (π*)³ BO 1.5 → <b>135.0</b>; O₂²⁻ (π*)⁴ BO 1 → <b>145.3 pm</b>. (higher BO = shorter)<br>
+H₂ BO 1; H₂⁺• ½; H₂⁻• ½; He₂⁺• ½; He₂ 0.</div>
+<p><b>Heteronuclear (HF, NO, CO)</b>: more EN atom's AOs are LOWER in energy; bonding MO looks more like (closer in E to) the EN atom's AO → e⁻ pulled toward it. AOs that don't overlap = <b>non-bonding MOs</b> (= lone pairs). Big energy mismatch → ionic.</p>
+<p><b>VB vs MO</b>: VB = localized 2-center bonds + LPs (basis of Lewis); MO = delocalized, includes antibonding, explains O₂ paramagnetism &amp; fractional BO.</p>
+
+<h2>6. "MOLECULES OF THE DAY" LEWIS QUICK-REF</h2>
+<p class="small">O₃: bent 117°, resonance, BO 1.5, central O FC +1. O₃⁻•: bent radical. NO₂⁻: bent, BO 1.5 (ambidentate). NO₃⁻: trig planar, N FC +1, BO 4/3. ONOO⁻ peroxynitrite: O=N–O–O⁻ (avoid like-sign FCs). N₂O: N=N=O ↔ N≡N–O. NO•, NO₂•: radicals (odd e⁻). SO₂: bent. SO₃: trig planar. SO₄²⁻, SO₃²⁻ (pyramidal), S₂O₃²⁻ (one O→S). <b>DMSO (CH₃)₂S=O: S central, 2 CH₃ + O + 1 LP → trig pyramidal at S, sp³; M = 78.13 g/mol</b>. Alkanes CₙH₂ₙ₊₂ all sp³; ethene sp². Peroxo = O–O single bond.</p>
+
+<h2>MO FILLING DIAGRAM — O₂ (draw this on exam)</h2>
+<table style="text-align:center"><tr><th>MO</th><th>O₂ (12)</th><th>N₂ (10) order</th></tr>
+<tr><td>σ*u2p</td><td>__</td><td>σ*u2p __</td></tr>
+<tr><td>π*g2p ×2</td><td class="hl"><b>↑_ ↑_</b> (2 unpaired → para)</td><td>π*g2p __ __</td></tr>
+<tr><td>πu2p ×2</td><td>↑↓ ↑↓</td><td><b>σg2p ↑↓</b> (above π!)</td></tr>
+<tr><td>σg2p</td><td>↑↓</td><td>πu2p ↑↓ ↑↓</td></tr>
+<tr><td>σ*u2s</td><td>↑↓</td><td>σ*u2s ↑↓</td></tr>
+<tr><td>σg2s</td><td>↑↓</td><td>σg2s ↑↓</td></tr></table>
+<p>AOs drawn on each side (2s low, 2p high), MOs in middle, dashed lines connect. O₂: BO = ½(8−4) = 2.</p>
+
+<h2>QUICK ANSWERS (lecture/LC questions)</h2>
+<ul class="small">
+<li><b>EN order</b>: K &lt; Be &lt; Sn &lt; Se &lt; S &lt; Cl. Trend: EN ↑ across a period, ↓ down a group; F 3.98 highest. (Exam gives EN table.)</li>
+<li><b>Central atoms</b>: H₂O→O, NCl₃→N, SO₂→S, HCN→C, HClO₃→Cl, XeF₄→Xe, PCl₅→P. H: 1 bond, O: 2, N: 3, C: 4, B: 3.</li>
+<li><b>FC on N in NO₃⁻ = +1</b> (each single-bonded O −1). Best ONOO⁻ = O=N–O–O⁻ (FC only on terminal O).</li>
+<li>BF₃: B 6 e⁻ (no double bond, FC 0). SO₄²⁻ octet version: S +2, each O −1 (expanded S=O versions also drawn). SF₆: S 12 e⁻.</li>
+<li>KF potential curve: R<sub>e</sub> = equilibrium bond length; ΔE<sub>d</sub> = energy to separate into neutral atoms; V(R<sub>e</sub>) involves Coulomb attraction + repulsion (not Coulomb only).</li>
+<li>AXₙE₂ can be nonpolar only for <b>n = 4</b> (sq planar). AXₙE (n=2–5): <b>none</b> can be nonpolar. Polar among BeF₂, SiF₄, SeF₄, XeF₄ → <b>SeF₄</b>.</li>
+<li>Wrong hybridization statement: "180° w/ two ligands can <i>always</i> be described by sp" (e.g. XeF₂ is AX₂E₃ → sp³d).</li>
+<li>BO: H₂⁺• ½ · H₂⁻• ½ · N₂⁻• 2.5 · C₂²⁻ 3 (K₂C₂ <b>diamagnetic</b>) · O₂⁻• total spin ½ · NO₃⁻ N–O 4/3.</li>
+<li>Count σ/π: every bond has 1σ; extra bonds are π. HCN: 2σ + 2π. CO₂: 2σ + 2π (C sp, O sp²).</li>
+</ul>
+</div></div>
+
+<!-- ======================= PAGE 2 ======================= -->
+<div class="page"><div class="cols">
+<h1>BACK — Composition · Solutions · Reactions · Stoichiometry · Gases · Safety · Playbook</h1>
+
+<h2>7. COMPOSITION (6.1–6.2)</h2>
+<p class="f"><b>n = m / 𝓜</b> · N = n·N<sub>A</sub> (6.022×10²³) · 1 Da = 1 g/mol · <b>mass-% (X) = (# X × 𝓜<sub>X</sub>) / 𝓜<sub>compound</sub> × 100</b></p>
+<div class="box"><b>EMPIRICAL FORMULA from %</b>: (1) assume <b>100 g</b> → % = grams (2) ÷ atomic mass → mol (3) <b>÷ smallest</b> (4) fix decimals: x.5→×2, x.33/x.67→×3, x.25/x.75→×4, x.2→×5 (5) write in Hill order (C, H, then alphabetical).<br>
+<b>MOLECULAR FORMULA</b>: <span class="hl">k = 𝓜<sub>molecular</sub> / 𝓜<sub>empirical</sub></span> (round to integer) → multiply all subscripts by k.</div>
+<div class="ex">40.0% C, 6.7% H, 53.3% O → 3.33 : 6.65 : 3.33 → <b>CH₂O</b>. If 𝓜≈60 → k=2 → C₂H₄O₂.<br>
+Dye 75.95% C, 17.72% N, 6.33% H, 𝓜≈240: 6.323 : 1.265 : 6.280 → C₅H₅N (79.10) → k = 3.03 → <b>C₁₅H₁₅N₃</b>.<br>
+Hematite 34.97 g Fe, 15.00 g O → 0.6262 : 0.9375 → 1 : 1.497 → ×2 → Fe₂O₃. Empirical CH, 𝓜 78.11 → C₆H₆.</div>
+
+<h2>8. SOLUTIONS (6.3–6.4)</h2>
+<table><tr><td><b>Molarity</b> <span class="f">M = n<sub>solute</sub> / V<sub>solution</sub>(L)</span></td><td>T-dependent (volume changes)</td></tr>
+<tr><td><b>Molality</b> <span class="f">b = n<sub>solute</sub> / m<sub>solvent</sub>(kg)</span></td><td>mass only, T-independent, more precise</td></tr>
+<tr><td><b>Mole fraction</b> <span class="f">χ = n<sub>i</sub>/n<sub>total</sub></span>, Σχ=1</td><td>mass-% = m<sub>i</sub>/m<sub>tot</sub>×100; ppm = ×10⁶</td></tr>
+<tr><td colspan=2><span class="f hl"><b>Dilution: c₁V₁ = c₂V₂</b></span> (moles of solute conserved) · <span class="f">n<sub>ions</sub> = i·n<sub>formula</sub></span> (NaCl i=2, CaCl₂ i=3, Fe(NO₃)₃ i=4)</td></tr>
+<tr><td colspan=2>Dilute aqueous: <b>M ≈ b</b> (d<sub>water</sub>≈1 kg/L), M ≈ d<sub>solvent</sub>·b · χ ↔ b: <span class="f">b = χ / [(1−χ)·𝓜<sub>solvent</sub>(kg/mol)]</span></td></tr></table>
+<p><b>w/w% + density → b or M</b>: take 100 g solution; solute g = %, solvent g = 100 − %; V = 100 g / d.</p>
+<div class="ex">64.0% H₂SO₄, d=1.5421: 64.0/98.079 = 0.6525 mol; 36.0 g water → <b>b = 18.1 mol/kg</b>; V = 64.85 mL → M = 10.1 M.<br>
+Saline 0.9% NaCl ≈ 9 g/L → <b>0.154 M NaCl = 0.308 M ions</b>. 1 L + 1 L water → 0.077 M.<br>
+<b>Q8</b>: V₁ = (0.154 M)(500. mL)/(1.00 M) = <b>77.0 mL</b> stock, fill to 500. mL with DI water in volumetric flask.</div>
+<p><b>Making a MOLAR soln</b>: weigh solute → dissolve in some solvent in <b>volumetric flask</b> (below mark) → rinse all solute in → fill <b>to the mark</b> → mix. <b>MOLAL soln</b>: weigh solute AND weigh solvent on analytical balance → mix (avoid evaporation).</p>
+<div class="key"><b>HYDRATE TRAP (Q9)</b>: 1 L of 0.1594 m Fe(NO₃)₃ from Fe(NO₃)₃·9H₂O (𝓜 = 241.86 + 9×18.015 = <b>403.99 g/mol</b>). Need ≈1 kg water → 0.1594 mol → <b>64.40 g hydrate</b>. The 9H₂O joins the solvent: 9×0.1594×18.015 = 25.84 g → add only <b>974.2 g DI water</b>. Weigh both, mix, dissolve. (≈1 L since dilute.)</div>
+
+<h2>9. REACTIONS (7.1–7.2) — always take INVENTORY</h2>
+<p><b>Inventory</b> = list every species actually in each beaker (incl. H₂O(l)). Strong electrolytes → ions only. Then ask: which new combination is insoluble / acid+base / gas / redox? Remove <b>spectator ions</b> → <b>net ionic equation</b> (balance atoms AND charge).</p>
+<table class="small"><tr><th>SOLUBLE</th><th>exceptions (insoluble)</th></tr>
+<tr><td><b>Group 1 (Li⁺,Na⁺,K⁺…) &amp; NH₄⁺ — always</b></td><td>–</td></tr>
+<tr><td><b>NO₃⁻, acetate — always</b></td><td>–</td></tr>
+<tr><td>Cl⁻, Br⁻, I⁻</td><td><b>Ag⁺, Pb²⁺, Hg₂²⁺</b> (AgCl, PbI₂, Hg₂Cl₂)</td></tr>
+<tr><td>SO₄²⁻</td><td>Ca²⁺, Sr²⁺, Ba²⁺, Pb²⁺, Ag⁺</td></tr>
+<tr><th>INSOLUBLE</th><th>exceptions (soluble)</th></tr>
+<tr><td>OH⁻ (TM &amp; Al³⁺ insoluble; Ca,Sr,Ba slightly)</td><td>Group 1, NH₄⁺</td></tr>
+<tr><td>S²⁻ (TM, Pb, As, Sb, Bi), CO₃²⁻, PO₄³⁻, CrO₄²⁻, F⁻ (Ba, Mg, Pb)</td><td>Group 1, NH₄⁺</td></tr>
+<tr><td colspan=2>Most Ag⁺ salts insoluble (except AgNO₃, Ag acetate)</td></tr></table>
+<div class="box"><b>Q10</b> KI + Pb(NO₃)₂: (a) KI(aq): K⁺, I⁻, H₂O · Pb(NO₃)₂(aq): Pb²⁺, NO₃⁻, H₂O (b) <b>precipitation</b> (yellow) (c) <b>Pb²⁺(aq) + 2 I⁻(aq) → PbI₂(s)</b>; K⁺, NO₃⁻ spectators. (0.0050 mol each → I⁻ limiting → 0.0025 mol PbI₂.) Driving force: Coulomb attraction (ion–ion &gt; ion–dipole).</div>
+<p><b>Why water dissolves ions</b>: polar, bent, dipole → <b>ion–dipole</b> forces (O end → cations, H end → anions). Solubility = balance of lattice ion–ion vs ion–dipole.</p>
+<h3>Acid/Base (Brønsted–Lowry)</h3>
+<p><b>Acid = H⁺ donor, base = H⁺ acceptor</b>; acid → conjugate base, base → conjugate acid. Arrhenius: ↑H₃O⁺ / ↑OH⁻ in water. <b>Amphoteric</b>: H₂O, HCO₃⁻, HSO₄⁻, HPO₄²⁻, [Mg(OH₂)₅(OH)]⁺ (CA = [Mg(OH₂)₆]²⁺, CB = [Mg(OH₂)₄(OH)₂]).</p>
+<p><b>Strong acids</b> (100% ionized, sheet): H₂S₂O₇, HI, HBr, HCl, H₂SO₄ (1st H⁺), HClO₄, HNO₃ (+HClO₃). <b>Strong bases</b>: OH⁻, O²⁻, S²⁻, NH₂⁻ (metal hydroxides/oxides). <b>Weak</b>: HF, CH₃COOH, H₃PO₄, H₂CO₃, NH₄⁺, H₂S, HCN / NH₃, CO₃²⁻, CN⁻, F⁻, acetate.</p>
+<p><b>Inventories</b>: strong HA: H₃O⁺, A⁻, H₂O (no HA). Weak HA: HA, A⁻(little), H₃O⁺(little), H₂O. NaOH: Na⁺, OH⁻, H₂O. <b>H₂SO₄(aq): H₃O⁺, HSO₄⁻, H₂O</b> (little SO₄²⁻). K₂O: O²⁻ + H₂O → 2OH⁻ (no O²⁻ in water).</p>
+<p><b>Net ionic</b>: strong+strong: H₃O⁺ + OH⁻ → 2H₂O. Weak acid + OH⁻: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O (write weak acid intact). <b>Gas-forming</b>: CO₃²⁻ + 2H₃O⁺ → H₂CO₃ + 2H₂O → <b>CO₂(g) + 3H₂O</b> (also S²⁻→H₂S, SO₃²⁻→SO₂).</p>
+<p><b>Acid-strength trends</b>: → across row EN↑ → stronger (CH₄&lt;NH₃&lt;H₂O&lt;HF). ↓ down group size↑ → stronger (<b>HF weakest, HI strongest</b>; lower charge density = stabler anion). More O's → stronger (HNO₃ &gt; HNO₂ &gt; HNO). Nonmetal oxides acidic (SO₃ &gt; SO₂), metal oxides basic.</p>
+<h3>Redox &amp; oxidation numbers</h3>
+<p><span class="hl"><b>OIL RIG</b>: Oxidation = Loses e⁻ (ON ↑); Reduction = Gains e⁻ (ON ↓)</span>. <b>Oxidizer gets reduced; reducer gets oxidized.</b></p>
+<p><b>ON rules</b>: element = 0 · monatomic ion = charge · Σ = overall charge · <b>F = −1</b> · O = −2 (peroxide −1, with F +2) · Group 1 +1, Group 2 +2, Al +3 · H +1 (−1 with metals) · halogens −1 (unless with O). From Lewis: give ALL bond e⁻ to more EN atom (split if equal). <span class="trap">ON ≠ formal charge</span>. Ex: NO₃⁻ N=+5; CH₃COOH: CH₃ C = −3, COOH C = +3. Thermite Fe₂O₃ + 2Al → 2Fe + Al₂O₃: Fe +3→0 (oxidizer), Al 0→+3 (reducer). Combustion = redox (C oxidized, O reduced), exothermic ΔH &lt; 0.</p>
+
+<h2>10. STOICHIOMETRY (7.3–7.5)</h2>
+<div class="key"><b>ROAD MAP</b>: g A <span class="f">÷𝓜<sub>A</sub></span>→ mol A <span class="f">×(coef B/coef A)</span>→ mol B <span class="f">×𝓜<sub>B</sub></span>→ g B. Solutions: mol = M×V(L). Gases: mol = PV/RT.<br>
+<b>LIMITING REACTANT</b>: mol of each ÷ its coefficient → <span class="hl">smallest = limiting</span> (or: compute product from each; least product wins). Theoretical yield from limiting. <b>Excess left</b> = given − used.<br>
+<span class="f"><b>%-yield = actual / theoretical × 100%</b></span></div>
+<p><b>Balancing</b>: balance metals/other first, then H, then O last; smallest whole numbers; check charge for ionic eqns.</p>
+<div class="ex"><b>Q7</b>: <b>2NH₃ + 3CuO → N₂ + 3Cu + 3H₂O</b>. 18.1 g/17.031 = 1.063 mol NH₃ (÷2 = 0.531); 90.4/79.545 = 1.136 mol CuO (÷3 = 0.379) → <b>CuO limiting</b>. N₂ theo = 1.136/3 × 28.014 = 10.61 g; %-yield = 6.63/10.61 = <b>62.5%</b>.<br>
+Mg + 2HCl → MgCl₂ + H₂: 15.8 g Mg (0.650 mol), 14.6 g HCl (0.400 mol ÷2 = 0.200) → HCl limiting → 0.200×95.21 = 19.0 g; 16.3 g actual → 85.8%.<br>
+P₄ + 6Cl₂ → 4PCl₃: 31.3 g Cl₂ needs 9.12 g P₄ → 45.0 − 9.1 = <b>35.9 g P₄ excess</b>.</div>
+<h3>Titration</h3>
+<p>Titrant (known M) added from buret until <b>equivalence point</b> (stoichiometric) ≈ <b>end point</b> (indicator color change). <span class="f"><b>M<sub>titrant</sub>V<sub>titrant</sub> → mol → ×ratio → mol analyte ÷ V<sub>analyte</sub></b></span>. Primary standard: very pure, stable, no hydrate water, high 𝓜.</p>
+<div class="ex"><b>Q11</b>: 2Cl⁻ + Hg²⁺ → HgCl₂(s). n Hg²⁺ = 1.46×10⁻³ L × 8.25×10⁻⁴ M = 1.205×10⁻⁶ mol → ×2 = 2.41×10⁻⁶ mol Cl⁻ ÷ 0.25×10⁻³ L = <b>9.6×10⁻³ M</b> (2 sf from 0.25 mL). <span class="trap">Don't forget the 2:1 ratio!</span><br>
+0.500 M NaOH vs 500. mL 0.100 M HAc (1:1) → 0.0500 mol → 0.100 L = 100. mL. Ba(OH)₂ + H₂SO₄ → BaSO₄(s) + 2H₂O (acid/base + precipitation).</div>
+
+<h2>11. GASES (8.1–8.5)</h2>
+<div class="key f"><b>PV = nRT</b> · R = <b>0.08206 L·atm/(mol·K)</b> = 8.314 J/(mol·K) = 62.36 L·Torr/(mol·K) · <b>T(K) = °C + 273.15</b><br>
+<b>Combined: P₁V₁/(n₁T₁) = P₂V₂/(n₂T₂)</b> → cancel what's constant (Boyle P₁V₁=P₂V₂; Charles V/T; Gay-Lussac P/T; Avogadro V/n)</div>
+<p class="f"><b>1 atm = 760 mmHg = 760 Torr = 101.325 kPa = 1.01325 bar = 14.7 psi</b>; 1 L·atm = 101.325 J. Barometer P = ρgΔh (Hg 13.56 g/mL). <b>STP</b> 0 °C, 1 atm → <b>22.414 L/mol</b>.</p>
+<p class="f"><b>Density d = P𝓜/(RT)</b> · <b>Molar mass 𝓜 = mRT/(PV) = dRT/P</b></p>
+<p class="f"><b>Dalton: P<sub>tot</sub> = ΣP<sub>i</sub>, P<sub>i</sub> = χ<sub>i</sub>P<sub>tot</sub></b>. Collected over water: <span class="hl">P<sub>gas</sub> = P<sub>atm</sub> − P<sub>H₂O</sub>(T)</span>. Vapor pressure ↑ with T; = P<sub>atm</sub> at normal b.p.</p>
+<p class="f"><b>Graham (8.4)</b>: rate₁/rate₂ = √(𝓜₂/𝓜₁); time₁/time₂ = √(𝓜₁/𝓜₂) (lighter = faster).</p>
+<p class="f"><b>KMT (8.5)</b>: ⟨E<sub>kin</sub>⟩ = 3/2 k<sub>B</sub>T (per particle) = 3/2 RT (per mol) — depends ONLY on T. <b>u<sub>rms</sub> = √(3RT/𝓜)</b>, ⟨v⟩ = √(8RT/π𝓜), v<sub>mp</sub> = √(2RT/𝓜) <span class="trap">𝓜 in kg/mol, R = 8.314!</span> v<sub>mp</sub> &lt; ⟨v⟩ &lt; u<sub>rms</sub>. Postulates: point particles, no forces, elastic collisions, random motion. <b>Real gases deviate at high P, low T</b>; Z = PV/nRT (=1 ideal); He most ideal.</p>
+<p><b>Gas stoich</b>: same T,P → <b>volume ratio = mole ratio</b>. 2C₂H₂ + 5O₂ → 4CO₂ + 2H₂O: 9340 L C₂H₂ × 5/2 = 23 350 L O₂ ÷ 7000 L = 3.34 → <b>4 tanks</b>.</p>
+<div class="ex"><b>Q12</b>: read graph at 32 °C → <b>P<sub>H₂O</sub> ≈ 0.047 atm</b>; n = PV/RT = 0.047×1.00/(0.08206×305.15) = 1.9×10⁻³ mol × 18.016 = 0.034 g ÷ 995.1 g/L → <b>0.034 mL</b>.<br>
+<b>Q13</b>: V₂ = V₁(P₁/P₂)(T₂/T₁) = 1.00 L (760/770)(330.15/300.15) = <b>1.09 L → expands</b>: T rises 10% but P only 1.3% → T effect wins.</div>
+
+<h2>12. SAFETY MINUTE (asked on exam!)</h2>
+<p class="small"><b>Autoclave hazards</b>: scalding high-P steam (~30 psi) burns; superheated liquids boil over/splash if removed too soon; steam corrosion → vessel failure/explosion (annual inspection). <b>PPE</b>: eye protection/face shield, lab coat/apron, <b>heat-insulating gloves</b> + training. <b>Pressurized devices</b>: never open before pressure released (MagLab 2015 death). <b>NFPA diamond</b>: blue = health, red = flammability, yellow = instability/reactivity, white = special (W, OX); 0–4 (4 worst). <b>SOP</b> = procedures, hazards, controls, training documentation. <b>SDS</b> 16 sections (1 ID, 2 hazards, 4 first aid, 5 fire, 7 handling/storage, 8 exposure/PPE, 11 toxicology). <b>Pyrophorics</b> (t-BuLi, Sangji UCLA 2009: no lab coat, syringe at 50 mL scale): syringe &lt;50 mL, <b>cannula ≥50 mL</b>, septa (≤~10 punctures), flame-resistant lab coat. <b>Complacency</b>: stay alert in routine work.</p>
+
+<h2>13. EXAM PLAYBOOK (by question type)</h2>
+<ol class="small">
+<li><b>Lewis + VSEPR + polar?</b> count e⁻ → skeleton → octets/FC → SN → e⁻ geom → shape (LP placement) → Natta drawing → dipole vectors → polar/nonpolar. State angles &amp; distortions.</li>
+<li><b>VB description</b>: Lewis → hybridization per atom (SN) → draw xyz axes, bond axis = z → label every bond σ/π + which orbitals overlap (sp–1s, sp–sp, p–p) → sketch overlap.</li>
+<li><b>MO / bond order</b>: count valence e⁻ (adjust charge) → choose ordering (≤N₂ vs O₂/F₂) → fill → BO → para/dia → rank bond lengths (high BO = short).</li>
+<li><b>Molar mass</b>: Σ(atoms × atomic mass) with 4–5 sf; show each term.</li>
+<li><b>Empirical/molecular</b>: 100 g → mol → ÷ smallest → integers → k = 𝓜/𝓜<sub>emp</sub>.</li>
+<li><b>Limiting/yield</b>: balance → mol → ÷ coef → smallest limits → theo yield → %.</li>
+<li><b>Dilution</b>: c₁V₁ = c₂V₂ + describe flask procedure.</li>
+<li><b>"Explain how to make…"</b>: give numbers (g solute, g or mL solvent), glassware, steps; hydrates!</li>
+<li><b>Mixing two solutions</b>: (a) inventory each (b) classify rxn type (c) net ionic + phases + spectators.</li>
+<li><b>Titration</b>: mol titrant → ratio → mol analyte → ÷ V.</li>
+<li><b>Gas</b>: list P,V,n,T with units; convert to atm, L, K; pick law; predict qualitatively first (sanity check).</li>
+<li><b>Safety</b>: 2 specific hazards + 3 specific PPE items.</li>
+</ol>
+<p class="small"><b>Sig-fig reminders</b>: ×/÷ → fewest sf; +/− → fewest decimals; exact numbers (coefficients, 273.15 def., 1000 mL/L) unlimited. "500." has 3 sf. Keep extra digits until the end.</p>
+</div></div>
+</body></html>
