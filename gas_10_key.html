@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Gas 10: Key</title>
+<style>
+@page { size: letter; margin: 0.55in 0.65in; }
+body { font-family: Arial, "Liberation Sans", sans-serif; font-size: 9.7pt; line-height: 1.33; margin:0; }
+h1 { font-size: 13pt; margin: 0 0 4px; }
+h2 { font-size: 10pt; background:#1f4e79; color:#fff; padding: 1px 6px; margin: 8px 0 3px; break-after: avoid; }
+.p { break-inside: avoid; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 0.5px dotted #999; }
+.ans { background:#fff200; font-weight:bold; padding: 0 2px; }
+.tip { color:#c00000; }
+.t { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; background:#f3f3f3; padding: 0 3px; }
+p { margin: 1px 0; }
+</style></head><body>
+<h1>Gas 10-Problem Set: Worked Solutions</h1>
+<p>Each solution follows the 5-step routine: <b>table → convert → pick equation → predict → solve/check</b>. <span class="tip">Red = common mistake.</span> R = 0.08206 L·atm/(mol·K), STP = 273.15 K and 1 atm (22.414 L/mol).</p>
+
+<div class="p"><b>1.</b> <span class="t">P₁=755 mmHg V₁=5.00 L T₁=298.15 K | P₂=380. mmHg V₂=? T₂=258.15 K</span>, n constant.<br>
+V₂ = V₁ × (P₁/P₂) × (T₂/T₁) = 5.00 × (755/380.) × (258.15/298.15) = 5.00 × 1.987 × 0.8658 = <span class="ans">8.60 L</span>.<br>
+Pressure dropped by about half (×1.99 for V), but T dropped only 13% (×0.866). The pressure effect wins, so the balloon expands. <b>Trick: write each change as a ratio factor and ask whether it should make V bigger or smaller.</b></div><div class="p"><b>2.</b> n = 4.50/44.009 = 0.1023 mol; T = 310.15 K. P = nRT/V = (0.1023)(0.08206)(310.15)/2.00 = <span class="ans">1.30 atm</span>.</div><div class="p"><b>3.</b> Empirical: C 85.6/12.011 = 7.127, H 14.4/1.008 = 14.29 → 1 : 2.00 → CH₂ (14.027 g/mol).<br>
+<span class="t">m=0.802 g, V=0.354 L, T=373.15 K, P=752/760=0.9895 atm</span><br>
+𝓜 = mRT/(PV) = (0.802)(0.08206)(373.15)/[(0.9895)(0.354)] = <span class="ans">70.1 g/mol</span>. k = 70.1/14.027 = 5.00 → <span class="ans">C₅H₁₀</span>.<br>
+<span class="tip">Exam combo: % composition → empirical formula, gas data → 𝓜, then k = 𝓜/𝓜_emp.</span></div><div class="p"><b>4.</b> n(He) = 2.00/4.0026 = 0.4997 mol; n(O₂) = 8.00/31.998 = 0.2500 mol. RT/V = (0.08206 × 298.15)/5.00 = 4.893 atm/mol.<br>
+P(He) = 0.4997 × 4.893 = <span class="ans">2.45 atm</span>; P(O₂) = 0.2500 × 4.893 = <span class="ans">1.22 atm</span>; P_tot = <span class="ans">3.67 atm</span>. χ(He) = 0.4997/0.7497 = <span class="ans">0.667</span> (check: 0.667 × 3.67 = 2.45 ✓).<br>
+<span class="tip">The partial pressure depends on MOLES, not grams: 8 g O₂ gives less pressure than 2 g He.</span></div><div class="p"><b>5.</b> P(O₂) = 758 − 19.8 = 738.2 mm-Hg = 0.9713 atm; T = 295.15 K; V = 0.512 L.<br>
+n(O₂) = (0.9713)(0.512)/(0.08206 × 295.15) = 0.02053 mol → × (2 KClO₃/3 O₂) = 0.01369 mol → × 122.55 = <span class="ans">1.68 g KClO₃</span>.<br>
+<span class="tip">Two traps: forgetting to subtract the water vapor, and forgetting the 2:3 ratio.</span></div><div class="p"><b>6.</b> n(N₂) = PV/RT = (1.10)(65.0)/(0.08206 × 298.15) = 2.922 mol → × (2/3) = 1.948 mol NaN₃ × 65.01 = <span class="ans">127 g NaN₃</span>.<br>
+<b>Pattern: gas → mol via PV=nRT, then mole ratio, then grams.</b></div><div class="p"><b>7.</b> Same T and P → <b>liters behave like moles</b>. 6.00 L N₂ would need 18.0 L H₂, but only 15.0 L is available → <span class="ans">H₂ limiting</span>. NH₃ = 15.0 × (2/3) = <span class="ans">10.0 L</span>. N₂ used = 15.0/3 = 5.00 L → <span class="ans">1.00 L N₂ left over</span>.</div><div class="p"><b>8.</b> n(Al) = 2.00/26.982 = 0.07412 mol (÷2 = 0.0371). n(Cl₂) = (1.00)(1.50)/(0.08206 × 298.15) = 0.06131 mol (÷3 = 0.0204) → <span class="ans">Cl₂ is limiting</span>.<br>
+AlCl₃ = 0.06131 × (2/3) = 0.04087 mol × 133.33 = <span class="ans">5.45 g AlCl₃</span>.</div><div class="p"><b>9.</b> (a) rate(H₂)/rate(O₂) = √(31.998/2.016) = <span class="ans">3.98× faster</span>.<br>
+(b) rate(X)/rate(He) = √(𝓜_He/𝓜_X) → 0.354 = √(4.0026/𝓜) → 𝓜 = 4.0026/0.354² = <span class="ans">31.9 g/mol → O₂</span>.<br>
+(c) Time is the inverse of rate: t_X/t_N₂ = √(𝓜_X/𝓜_N₂) → 𝓜 = 28.014 × (191/105)² = <span class="ans">92.7 g/mol</span>.<br>
+<span class="tip">Heavier gas = slower rate = LONGER time. Square both sides to solve for 𝓜.</span></div><div class="p"><b>10.</b> u_rms = √(3RT/𝓜), R = 8.314 J/(mol·K), T = 298.15 K.<br>
+He: √(3 × 8.314 × 298.15/0.0040026) = <span class="ans">1.36 × 10³ m/s</span>; Xe: √(3 × 8.314 × 298.15/0.13129) = <span class="ans">238 m/s</span>.<br>
+(b) Equal speeds mean equal T/𝓜: T(O₂) = 298.15 × (31.998/4.0026) = <span class="ans">2.38 × 10³ K</span>.<br>
+<span class="tip">𝓜 in kg/mol (4.0026 g → 0.0040026 kg). With g/mol you'd get an answer √1000 ≈ 31.6× too small.</span></div></body></html>

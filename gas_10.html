@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Gas 10 Problems</title>
+<style>
+@page { size: letter; margin: 0.6in 0.75in; }
+body { font-family: "Times New Roman", "Liberation Serif", serif; font-size: 11.5pt; line-height: 1.3; margin:0; }
+h1 { font-size: 15pt; margin: 0 0 4px; }
+h2 { font-family: Arial, sans-serif; font-size: 11pt; background:#1f4e79; color:#fff; padding: 2px 6px; margin: 12px 0 4px; break-after: avoid; }
+.prob { break-inside: avoid; margin: 0 0 4px; }
+.sp { height: 1.15in; }
+.sp.l { height: 1.7in; }
+.box { font-family: Arial, sans-serif; font-size: 9.6pt; border: 1.5px solid #c00000; background:#fff5f5; padding: 5px 8px; break-inside: avoid; }
+.box ol { margin: 2px 0; padding-left: 18px; }
+.hl { background:#fff200; }
+.star { color:#c00000; font-weight:bold; }
+p { margin: 2px 0; }
+table { border-collapse: collapse; font-size: 9.4pt; }
+td, th { border: 1px solid #888; padding: 1px 5px; }
+</style></head><body>
+<h1>Gas Problems: 10-Problem Set</h1>
+<p>Work on scratch paper or in the spaces. Answers and full worked solutions are in <i>gas_10_key.pdf</i>. <span class="star">★</span> = exam-level problem. Use R = 0.08206 L·atm/(mol·K) unless told otherwise.</p>
+
+<div class="box"><b>THE 5-STEP GAS ROUTINE (do this for EVERY gas problem)</b>
+<ol>
+<li><b>Make a table</b> of P, V, n, T. Write each given value with its unit and put "?" for the one you want. Two states (before/after)? Make two columns.</li>
+<li><b>Convert</b>: <span class="hl">T → K (+273.15)</span> · <span class="hl">P → atm</span> (÷760 for mmHg/Torr, ÷101.325 for kPa) · <span class="hl">V → L</span> (mL ÷ 1000) · grams → mol (÷𝓜).</li>
+<li><b>Pick the equation</b>:
+<table><tr><th>Situation</th><th>Use</th></tr>
+<tr><td>One state, find one of P, V, n, T</td><td>PV = nRT</td></tr>
+<tr><td>Same gas, conditions change (before → after)</td><td>P₁V₁/(n₁T₁) = P₂V₂/(n₂T₂); cross out what stays constant</td></tr>
+<tr><td>Grams + volume given, find 𝓜 or density</td><td>𝓜 = mRT/(PV) · d = P𝓜/(RT)</td></tr>
+<tr><td>Mixture of gases</td><td>P_tot = ΣP_i · P_i = χ_i·P_tot · P_i = n_iRT/V</td></tr>
+<tr><td>Collected over water</td><td>P_gas = P_total − P_H₂O</td></tr>
+<tr><td>Reaction involving a gas</td><td>gas ⇄ mol via PV = nRT, then mole ratio. Same T and P? volume ratio = mole ratio</td></tr>
+<tr><td>Rates / effusion</td><td>rate₁/rate₂ = √(𝓜₂/𝓜₁) · time₁/time₂ = √(𝓜₁/𝓜₂)</td></tr>
+<tr><td>Speeds / kinetic energy</td><td>u_rms = √(3RT/𝓜), R = 8.314, <b>𝓜 in kg/mol</b> · KE_avg = 3/2 RT (per mol)</td></tr></table></li>
+<li><b>Predict first</b>: does the answer go up or down? (e.g. hotter → bigger V; more pressure → smaller V)</li>
+<li><b>Solve, then check</b> units, sig figs, and that the direction matches your prediction.</li>
+</ol></div>
+
+<h2>Problems</h2><div class="prob"><p><b>1.</b> <span class="star">★</span> (Combined) A weather balloon holds 5.00 L of He at 755 mm-Hg and 25 °C at launch. It rises to an altitude where P = 380. mm-Hg and T = −15 °C. What is its volume there? Explain why it expanded even though it got colder.</p><div class="sp l"></div></div><div class="prob"><p><b>2.</b> 4.50 g of CO₂ is placed in a 2.00-L flask at body temperature (37 °C). What is the pressure in atm?</p><div class="sp l"></div></div><div class="prob"><p><b>3.</b> <span class="star">★</span> A hydrocarbon contains 85.6% C and 14.4% H by mass. A 0.802-g sample of its vapor occupies 354 mL at 100. °C and 752 mm-Hg. Determine the molar mass and the molecular formula.</p><div class="sp l"></div></div><div class="prob"><p><b>4.</b> <span class="star">★</span> A 5.00-L flask at 25 °C contains 2.00 g He and 8.00 g O₂. Find the partial pressure of each gas, the total pressure, and the mole fraction of He.</p><div class="sp l"></div></div><div class="prob"><p><b>5.</b> <span class="star">★</span> Heating KClO₃ gives O₂: 2 KClO₃(s) → 2 KCl(s) + 3 O₂(g). The O₂ is collected over water: 0.512 L at 22 °C and a total pressure of 758 mm-Hg (vapor pressure of water at 22 °C = 19.8 mm-Hg). What mass of KClO₃ (122.55 g/mol) decomposed?</p><div class="sp l"></div></div><div class="prob"><p><b>6.</b> <span class="star">★</span> Car airbags inflate by 2 NaN₃(s) → 2 Na(s) + 3 N₂(g). What mass of NaN₃ (65.01 g/mol) is needed to fill a 65.0-L airbag at 1.10 atm and 25 °C?</p><div class="sp l"></div></div><div class="prob"><p><b>7.</b> 15.0 L H₂ and 6.00 L N₂ react at the same T and P: N₂(g) + 3 H₂(g) → 2 NH₃(g). Which is limiting? What volume of NH₃ forms, and what volume of which gas is left over? (No ideal gas law needed!)</p><div class="sp l"></div></div><div class="prob"><p><b>8.</b> <span class="star">★</span> 2.00 g of Al (26.982 g/mol) is reacted with 1.50 L of Cl₂ gas at 25 °C and 1.00 atm: 2 Al(s) + 3 Cl₂(g) → 2 AlCl₃(s). Determine the limiting reactant and the mass of AlCl₃ (133.33 g/mol) formed.</p><div class="sp l"></div></div><div class="prob"><p><b>9.</b> (a) How many times faster does H₂ effuse than O₂? (b) An unknown gas effuses 0.354 times as fast as He. What is its molar mass, and what could it be? (c) 1.00 L of N₂ effuses through a pinhole in 105 s; the same volume of an unknown gas takes 191 s. Find the unknown's molar mass.</p><div class="sp l"></div></div><div class="prob"><p><b>10.</b> (a) Calculate u_rms for He and for Xe (131.29 g/mol) at 25 °C. (b) At what temperature would O₂ molecules have the same u_rms as He atoms at 25 °C?</p><div class="sp l"></div></div></body></html>
